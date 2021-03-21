@@ -4,16 +4,16 @@ import socket
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #Servidor TCP
 
-ip = "0.0.0.0" # Para deixar mais organizado, vamos colocar o ip e a porta dentro da variavel
+ip = "0.0.0.0" # Para deixar mais organizado, vou inserir o IP dentro de uma variável 
 port = 777
 
 
 try:
-    server.bind((ip, port)) # O serve.bind esta ouvindo na porta 777 no iṕ generico 0,0,0,0
+    server.bind((ip, port)) # O serve.bind está ouvindo na porta 777 no ip genérico 0,0,0,0
 
     server.listen(5) # vamos passar de fato pra ele ouvir na porta, o 5 e a quantidade de pessoas que pode conectar, geralmente é 5
 
-    print "Listening in " + ip + " port: " + str(port) #Quando der certo acima, vamos printar que ele esta escultando na porta
+    print "Listening in " + ip + " port: " + str(port) #Quando der certo, vamos printar que ele esta escultando na porta
 
     (client_socket, address) = server.accept() # Vamos aceitar a conexão, quando aceitamos ele mostra 2 resultados
     #(<socket._socketobject object at 0x7f5d3d47dad0>, ('127.0.0.1', 47124))
