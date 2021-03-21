@@ -19,9 +19,9 @@ try: #//Então
     
      client.connect(('hackerdepressivo.com.br', 80))# // CONECTANDO-SE AO SITE NA PORTA 80
       
-     print client.send("GET / HTTP/1.1\nHost: hackerdepressivo.com.br\n\n\n")#//A MENSAGEM QUE VAMOS ENVIAR PARA O SERVIDOR
+     print client.send("GET / HTTP/1.1\nHost: hackerdepressivo.com.br\n\n\n")#// MENSAGEM ENVIADA PARA O SERVIDOR
 
-     print client.recv(1024)# // MENSAGEM QUE VAMOS RECEBER, 1024 BUFFEROVERFLOW
+     print client.recv(1024)# // RESPOSTA, 1024 BUFFEROVERFLOW
 
 except:# // SENÃO
     print "A conexão falhou"
