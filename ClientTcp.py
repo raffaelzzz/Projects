@@ -17,8 +17,8 @@ client.settimeout(15) #//O TEMPO QUE O CLIENTE VAI SE CONECTAR COM O SERVIDOR (1
 
 try: #//Então
     
-     client.connect(('hackerdepressivo.com.br', 80))# //ESTOU DANDO O CONNECT PARA ELE INICIAR, DANDO TAMBÉM OS PARAMENTROS
-        
+     client.connect(('hackerdepressivo.com.br', 80))# // CONECTANDO-SE AO SITE NA PORTA 80
+      
      print client.send("GET / HTTP/1.1\nHost: hackerdepressivo.com.br\n\n\n")#//A MENSAGEM QUE VAMOS ENVIAR PARA O SERVIDOR
 
      print client.recv(1024)# // MENSAGEM QUE VAMOS RECEBER, 1024 BUFFEROVERFLOW
